@@ -1,0 +1,327 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #eeeeee;
+}
+*{
+    box-sizing: border-box;
+}
+/*************************FOR TOP NAV********************/
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    height: 300px;
+    width: 200px;
+    margin-left: 20px;
+}  
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}  
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}  
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}  
+.topnav .icon {
+    display: none;
+}  
+@media screen and (max-width: 300px) {
+.topnav a:not(:first-child) {display: none;}
+.topnav a.icon {
+      float: right;
+      display: block;
+    }   
+  }
+
+  
+  @media screen and (max-width: 300px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+/********************END HERE****************************/
+.main{
+    height: 100vh;
+    background-image: url("Images/pexels-petri-r-4930548.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+}
+.menu a:nth-child(1){
+    color: #fff;
+    font-size: 15px;
+    margin: 0px 100px;
+    font-family: myriad pro;
+    font-weight: 900;
+}
+.menu a:nth-child(2){
+    color: black;
+    font-size: 15px;
+    margin: 0px 100px;
+    font-family: myriad pro;
+    font-weight: 900;
+}
+.sign-in{
+    margin: 10px;
+    width: 190px;
+    height: 22px;
+    border-radius: 10px;
+    border: 1px solid #3d3d3e;
+    /*color: #3d3d3e;*/
+    color: black;
+    background-color: lightgrey;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+.sign-in:hover{
+    color: #fff;
+    background-color: #4530c3;
+    transition: all ease 0.4s;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 15px;
+}
+/*---------------code for login page given below ---------------*/
+
+.login-form{
+    height: 280px;
+    width: 290px;
+    padding: 80px;
+    right: 35%;
+    top: 20%;
+    position: absolute;
+}
+
+.login-form h1{
+    text-align: center;
+    margin-top: -14%;   
+}
+
+.loginbtn{
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: linear-gradient(120deg, #3498db, #8e44ab);
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    transition: .5s;
+}
+.loginbtn:active{
+    transform: scale(0.5);
+}
+
+.loginbtn:hover{
+    background-position: right;
+}
+
+.bottomtext{
+    margin-top: 10px;
+    align-items: center;
+    font-size: 14px;
+}
+.bottomtext a{
+    color:#3d3d3e;
+}
+
+.txt{
+    margin: 30px 0;
+    position: relative;
+    border-bottom: 2px solid #adadad;
+}
+
+.txt input{
+    width: 100%;
+    font-size: 15px;
+    border: none;  
+    background: none;
+    outline: none;
+}
+
+.txt span::before{
+    content: attr("data-placeholder");
+    position:relative;
+    z-index: -1;
+    color: #3d3d3e;
+    top: 50%;
+    left: 5px;
+    transition: .5s;
+    transform: translateY(-50%);
+
+}
+
+.txt span::after{
+    top: 100%; 
+    left: 0;
+    width: 100%;
+    height: 2px;
+    content: "";
+    position:relative;
+    transition: .5s;
+    background: linear-gradient(120deg #3498db , #8e44ad);
+}
+
+.focus+span::before{
+    top: -5px;
+}
+/*
+.txt span:hover{
+    width: 100%;
+}
+*/
+
+.focus+span::after{
+    width: 100%;
+}
+/**************************BOX CONTAINER************************/
+.service-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.h-box{
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    color: #3d3d3e;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.s-box{
+    width: 220px;
+    height: 290px;
+    padding: 20px;
+    background-color:#fff ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 1px 6px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 5px;
+    border-radius: 10px;
+}
+.s-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 10px;
+    background-color:#313131 ;
+}
+.front-icon{
+    background-image:url("Images/front.jpg");
+}
+.back-icon{
+    background-image: url("Images/back.jpg");
+}
+.seo-icon{
+    background-image: url("Images/seo.jpeg");
+}
+.gui-icon{
+    background-image: url("images/gui.jpeg");
+}
+.s-box a{
+    margin: 10px 0px;
+    font-weight: bold;
+    color: #313131;
+    margin: 10px 0px;
+}
+
+.s-box p{
+    font-family: italic;
+    color: #313131;
+    font-size: 14px;
+}
+.s-button{
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius:30px ;
+    color: #4530c3;
+    border: 1px solid #4530c3;
+    background-color:#fff;
+    cursor: pointer;
+    outline: none;
+}
+.s-button:hover{
+    color: #fff;
+    background-color: #4530c3;
+    transition: all ease 0.5s;
+}
+button:active{
+    transform: scale(1.1);
+}
+/************************Footer code Here***********************/
+#footer{
+    background-color:#333;
+    padding: 12px;
+    color: #000;
+}
+.footer-container{
+    height: 100px;
+    width: 240px;
+}
+.fa-heart{
+    color: red;
+}
+
+.follow-icon  a , .feedback {
+    text-decoration: none;
+    cursor: pointer
+}
+.fa-telegram:hover{
+    transform: scale(1.5);
+    color: #0088cc;
+}
+.fa-facebook-official:hover{
+    transform: scale(1.5);
+    color: white;
+}
+.fa-instagram:hover{
+    transform: scale(1.5);
+    background: linear-gradient(#8a3ab9, #e95950, #bc2a8d, #fccc63, #fbad50,#4c68d7);
+    border-radius: 3px;
+}
+.feedback{
+    color: #fff;
+    max-width: max-content;
+}
+.feedback input{
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    width: 70px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,128 @@
+<html>
+    <link rel="stylesheet" href="E:/website/css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Learning website</title>
+ 
+    <body>
+    <section class="main">
+        <nav>
+            <!-------------------------MENU LOGO-------------------------->
+            <div class="menu">
+
+                <a href="">Going to Internet</a>
+                <a href="">website Design</a>
+            </div>
+
+            <a href="" class="sign-in">Wanna Create an Account?</a>
+        </nav>
+        <div class="topnav" id="topnav">
+            <a href="" class="active">Home</a>
+            <a href="">Contact us</a>
+            <a href="">About us</a>
+            <a href="">News</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </a>
+        </div>
+
+       <form action="loginform.html" class="login-form">
+           <h1>Get Start</h1>
+           <div class="txt">
+               <input type="text">
+               <i class="fa fa-user" aria-hidden="true"></i>
+               <span   data-placeholder="UserName"></span>
+           </div>
+
+           <div class="txt">
+               <input required type="password">
+               <i class="fa fa-key" aria-hidden="true"></i>
+               <span data-placeholder="Password"></span>
+           </div>
+
+           <input  id="login" type="submit" class="loginbtn" value="Login">
+
+       </form>
+       <script type="text/javascript">
+       $(".txt input").on("focus", function(){
+           $(this).addClass("focus")
+       });
+       $(".txt input").on("blur",function(){
+           if($(this).val()== "")
+           $(this).removeClass("focus");
+       });
+
+       /********************FOR TOPNAV**********************/
+       function myFunction(){
+           var x = document.getElementById("topnav");
+        if(x.className === "topnav"){
+            x.className += "response";
+        }
+        else{
+            x.className = "response";
+        }
+       }
+       $("#login").click(function(){
+           alert("sure");
+           window.location = "http://www.google.com";
+       });
+       
+       /*****************END HERE**************************/
+       </script>
+    </section>
+    
+    <!--------------------------BOXES------------------------------>
+    <div class="h-box">Learning Section</div>
+    <div class="service-container">
+        <div class="s-box">
+        <div class="s-icon front-icon"></div>
+        <a href="">Front End Developer</a>
+        <p>Roma komarov is a CSS dev who founded Hayaku a bundle of useful script aiming
+            for rapid front-end web deveplopment....</p><br>
+        <button class="s-button">Read More</button>
+        </div>
+
+        <div class="s-box">
+            <div class="s-icon seo-icon"></div>
+            <a href="">SEO/Security</a>
+            <p>Roma komarov is a CSS dev who founded Hayaku a bundle of useful script aiming
+                for rapid front-end web deveplopment....</p><br>
+            <button class="s-button">Read More</button>
+            </div>
+
+            <div class="s-box">
+                <div class="s-icon gui-icon"></div>
+                <a href="">GUI</a>
+                <p>Roma komarov is a CSS dev who founded Hayaku a bundle of useful script aiming
+                    for rapid front-end web deveplopment....</p><br>
+                <button class="s-button">Read More</button>
+                </div>
+
+                <div class="s-box">
+                    <div class="s-icon back-icon"></div>
+                    <a href="">Back End Developer</a>
+                    <p>Roma komarov is a CSS dev who founded Hayaku a bundle of useful script aiming
+                        for rapid front-end web deveplopment....</p><br>
+                    <button class="s-button">Read More</button>
+                    </div>
+    </div>
+    <footer>
+        <section id="footer">
+            <div class="footer-container">
+            <p>Made with <i class="fa fa-heart" aria-hidden="true"></i> by Sonu Sharma</p>
+            <div class="follow-icon ">
+                Get in touch: <a style = "color: black;" href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a style="color:black;" href="https://desktop.telegram.org/"><i title="Telegram" class="fa fa-telegram" aria-hidden="true"></i></a>
+                <a style="color: black;" href="https://www.facebook.com/"><i title="Facebook" class="fa fa-facebook-official" aria-hidden="true"></i></a>
+            </div>
+            <div class="feedback"> 
+                <input type="text"> <i title="Feedback" class="fa fa-comments" aria-hidden="true"></i>
+            </div>
+            </div>
+            
+        </section>
+        <a href=".main">top</a>        
+    </footer>
+
+    </body>
+</html>
