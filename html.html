@@ -1,6 +1,15 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
     <link rel="stylesheet" href="E:/website/css.css">
+    <link rel="stylesheet" href="E:/website/loginform.html">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Learning website</title>
  
@@ -8,18 +17,16 @@
     <section class="main">
         <nav>
             <!-------------------------MENU LOGO-------------------------->
-            <div class="menu">
-
-                <a href="">Going to Internet</a>
-                <a href="">website Design</a>
-            </div>
-
-            <a href="" class="sign-in">Wanna Create an Account?</a>
+            <ul class="menu">
+                <li><a href="">Going to Internet</a></li>
+                <li><a href="#footer" >website Design</a></li>
+                <li class="sign-in" ><a href="">Wanna Create an Account?</a></li>
+            </ul>
         </nav>
         <div class="topnav" id="topnav">
             <a href="" class="active">Home</a>
-            <a href="">Contact us</a>
-            <a href="">About us</a>
+            <a href="#footer">Contact us</a>
+            <a href="#footer">About us</a>
             <a href="">News</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars" aria-hidden="true"></i>
@@ -29,7 +36,7 @@
        <form action="loginform.html" class="login-form">
            <h1>Get Start</h1>
            <div class="txt">
-               <input type="text">
+               <input required type="text">
                <i class="fa fa-user" aria-hidden="true"></i>
                <span   data-placeholder="UserName"></span>
            </div>
@@ -40,36 +47,12 @@
                <span data-placeholder="Password"></span>
            </div>
 
-           <input  id="login" type="submit" class="loginbtn" value="Login">
+           <input  id="login" type="submit" onclick="mySubmit()" class="loginbtn" value="Login">
 
        </form>
-       <script type="text/javascript">
-       $(".txt input").on("focus", function(){
-           $(this).addClass("focus")
-       });
-       $(".txt input").on("blur",function(){
-           if($(this).val()== "")
-           $(this).removeClass("focus");
-       });
 
-       /********************FOR TOPNAV**********************/
-       function myFunction(){
-           var x = document.getElementById("topnav");
-        if(x.className === "topnav"){
-            x.className += "response";
-        }
-        else{
-            x.className = "response";
-        }
-       }
-       $("#login").click(function(){
-           alert("sure");
-           window.location = "http://www.google.com";
-       });
-       
-       /*****************END HERE**************************/
-       </script>
     </section>
+       
     
     <!--------------------------BOXES------------------------------>
     <div class="h-box">Learning Section</div>
@@ -106,23 +89,107 @@
                     <button class="s-button">Read More</button>
                     </div>
     </div>
+    
+    <div class="circular">
+        <div class="inner"></div>
+        <div class="circle">
+            <div class="bar">
+                <div class="progress"></div>
+            </div>
+
+            <div class="bar right">
+                <div class="progress"></div>
+            </div>
+        </div>
+    </div>
+    
+
     <footer>
         <section id="footer">
             <div class="footer-container">
-            <p>Made with <i class="fa fa-heart" aria-hidden="true"></i> by Sonu Sharma</p>
-            <div class="follow-icon ">
-                Get in touch: <a style = "color: black;" href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            
+                <div class="follow-icon ">
+                <p>Made with <i class="fa fa-heart" aria-hidden="true"></i> by Sonu Sharma</p>
+                Get in touch: <a style = "color: black;" href="https://www.instagram.com/"><i title="Instagram" class="fa fa-instagram" aria-hidden="true"></i></a>
                 <a style="color:black;" href="https://desktop.telegram.org/"><i title="Telegram" class="fa fa-telegram" aria-hidden="true"></i></a>
                 <a style="color: black;" href="https://www.facebook.com/"><i title="Facebook" class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                </div>
+
+             <div class="feedback"> 
+                    <div class="feedback-form">
+                        <div>
+                            <label for="name"> Name : </label>
+                            <input type="text"name="UserName" placeholder="Enter your name"/>
+                        </div>
+                        <div>
+                            <label for="name">  Mail id: </label>
+                            <input type="email" name="email" placeholder="Enter your email">
+                        </div>
+                    </div>
+                
+                    <input type="text" placeholder="Write what you think.."> <i title="Feedback" class="fa fa-comments" aria-hidden="true"></i>
             </div>
-            <div class="feedback"> 
-                <input type="text"> <i title="Feedback" class="fa fa-comments" aria-hidden="true"></i>
             </div>
-            </div>
-            
-        </section>
-        <a href=".main">top</a>        
+        </section>     
     </footer>
 
+
+    <script type="text/javascript">
+        $(".txt input").on("focus", function(){
+            $(this).addClass("focus")
+        });
+        $(".txt input").on("blur",function(){
+            if($(this).val()== "")
+            $(this).removeClass("focus");
+        });
+ 
+        /********************FOR TOPNAV**********************/
+        function myFunction(){
+            var x = document.getElementById("topnav");
+         if(x.className === "topnav"){
+             x.className += "response";
+         }
+         else{
+             x.className = "response";
+         }
+        }
+        $("#login").click(function(){
+            alert("sure");
+            window.location = "http://www.google.com";
+        });
+        
+        /*****************END HERE**************************/
+        </script>
+     </section><script type="text/javascript">
+        $(".txt input").on("focus", function(){
+            $(this).addClass("focus")
+        });
+        $(".txt input").on("blur",function(){
+            if($(this).val()== "")
+            $(this).removeClass("focus");
+        });
+ 
+        /********************FOR TOPNAV**********************/
+        function myFunction(){
+            var x = document.getElementById("topnav");
+         if(x.className === "topnav"){
+             x.className += "response";
+         }
+         else{
+             x.className = "response";
+         }
+        }
+        $("#login").click(function(){
+            alert("sure");
+            window.location = "http://www.google.com";
+        });
+        function mySubmit(){
+            alert("are u sure");
+    
+        }
+        /*****************END HERE**************************/
+        </script>
+   
     </body>
+
 </html>
