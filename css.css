@@ -96,11 +96,12 @@ a{
     justify-content: center;
     font-weight: 500;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    
 }
 .sign-in:hover{
     
     color: rgb(0, 0, 0);
-    background-color: #4530c3;
+    background-color:white;
     transition: all ease 0.5s;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
 
@@ -407,16 +408,16 @@ cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
-    nav{
-
-    }
+    
    .service-container{
        flex-direction: column;
    }
    .login-form{
        flex-direction: column;
    }
+
   }
+
 
 
   
