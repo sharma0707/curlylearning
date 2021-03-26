@@ -160,7 +160,14 @@ nav ul li  a{
 .loginbtn:hover{
     background-position: right;
 }
+#loginclick{
 
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 10%;
+}
 .bottomtext{
     margin-top: 10px;
     align-items: center;

@@ -10,12 +10,12 @@
                 align-items: center;
             }
         </style>
-        <div class="form">
-            Name: <input type="text">
-            Gmail: <input type="email" name="" id="">
-            Password: <input type="password" name="" id="">
-            Confirm Password <input type="password" name="" id="">
-        </div>
+        <form action="servlet" method="POST">
+            Name: <input type="text" name="username"><br><br>
+            password: <input type="password" name="userpass"><br><br>
+            
+            <input type="submit" value="login">
+                </form>
         
     </body>
 </html>

@@ -1,21 +1,22 @@
 import java.sql.*;
 import java.io.*;
-class backend{
+
+class Backend{
     
-    public static void main(String...)throws IOException, SQLException{
+    public static boolean validate (String name, Strig pass){
+        boolean status = false;
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc.mysql://localhost:3306/users","root", "1234");
-            Statement stmt = con.createStatment();
-            ResultSet rs = stmt.executeQuery("select *from students");
-            while(rs.next())
-            {
-                System.out.println("rs.getInt(1)+ " "+rs.getString(2)");
-            }
-            
-            con.close();
+            Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root","1234");
+            PreparedStatement ps=con.prepareStatement("select *from user where name = SONU and pass= SHARMA");
+            ps.setString(1 , name);
+            ps.setString(2, pass);
+            ResultSet rs=ps.executeQuery();  
+            status=rs.next();  
+
         }
-        catch(Exception e){System.out.println("e");}
+        catch(Exception e){System.out.println(e);}  
+        return status;
 
     }
 
