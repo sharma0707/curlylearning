@@ -15,7 +15,7 @@ class Java extends  HttpServlet{
     String p = req.getParameter("userpass");  
           
     if(Backend.validate(n, p)){  
-        RequestDispatcher rd = req.getRequestDispatcher("backend");  
+        RequestDispatcher rd = req.getRequestDispatcher("servlet");  
         rd.forward(req,res);  
     }  
     else{  

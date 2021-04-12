@@ -1,0 +1,20 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color:#fff;
+}
+main{
+    background-image: url("Images/artwork-native.webp");
+    height: 67vh;
+    width: 100vh;
+    margin: 2px;
+    margin-left: 90vh;
+    border-radius: 20px;
+}
+.def{
+    font-style: oblique;
+    margin: 6px;
+}
+.motion{
+    margin: 20px;
+}

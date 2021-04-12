@@ -1,7 +1,7 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color: #eeeeee;
+    background-color: var(--primary-color);
 }
 *{
     box-sizing: border-box;
@@ -114,17 +114,32 @@ a{
     cursor: pointer;
     /*transform: rotateY(359deg);*/
 }
-nav ul{
+nav ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    padding: 7px 15px;
+    padding: 10px 15px;
 }
 nav ul li  a{
-    text-decoration: none;
-    
-    
+    text-decoration: none;   
 }
+nav #darkmode{
+    cursor: pointer;
+    margin: 10px;
+    margin-top: 1px;
+    flex: 1;
+}
+:root{
+   
+    --primary-color:#edf2fc;
+    --secondory-color:#212121;
+}
+.dark-theme{
+    --primary-color:#000016;
+--secondory-color:#f2f2f2;
+
+}
+
 /*---------------code for login page given below ---------------*/
 
 .login-form{
@@ -237,7 +252,7 @@ nav ul li  a{
 .h-box{
     align-items: center;
     margin-top: 20px;
-
+    color: var(--secondory-color);
     position: relative;
 
 }
@@ -290,7 +305,7 @@ nav ul li  a{
 
 .s-box p{
     font-family: italic;
-    color: #313131;
+    color: #212121;
     font-size: 14px;
 }
 .s-button{
@@ -324,13 +339,12 @@ button:active{
     border-radius: 10px;
 }
 @media only screen and (max-width: 600px)   {
-    .circular{
-        flex-direction: column;
-    }
+    
+    
 }
 .circular .inner{
     position: absolute;
-    display: block;
+    display: flex;
     background: gray;
     height: 80px;
     width: 80px;
@@ -348,11 +362,10 @@ button:active{
     width: 50px;
     align-content: space-between;
     background: linear-gradient(#1074a5, #8a3ab9);
+    transform: translate(30% , 33%);
     -webkit-border-radius: 100%;
-    
-
 }
-.bar:hover{
+.bar:active {
     transform: scale(1.1);
 }
 
@@ -413,7 +426,6 @@ cursor: pointer;
     margin-right: 10%;
       
 }
-
 @media only screen and (max-width: 600px) {
     
    .service-container{
@@ -422,9 +434,4 @@ cursor: pointer;
    .login-form{
        flex-direction: column;
    }
-
   }
-
-
-
-  

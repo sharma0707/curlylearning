@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="E:\website\html-front.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>What is Front End Development?</h1>
+        <p class="def">Have you ever looked at a website and wondered how it works?
+            All the buttons that you could click and the motions in your favorite website are a part of the front end development.
+            Basically, all the visible site features are built through
+        </p>
+    </div>
+    <main>
+    </main>
+    <div class="motion">
+        <h1> Hi I am</h1>
+        <p class="dev-name"> Sonu Sharma </p>
+        <p class="dev-description">I'm a <span id="steps">Developer</span></p>
+        <span class="down"><a href="#about">&darr;</a></span>
+
+    </div>
+    <script src="">
+        
+        var
+  words = ['Developer','Programmer','Designer'],
+  part,
+  i = 0,
+  offset = 0,
+  len = words.length,
+  forwards = true,
+  skip_count = 0,
+  skip_delay = 5,
+  speed = 100;
+
+var wordflick = function(){
+  setInterval(function(){
+      if (forwards) {
+        if(offset >= words[i].length){
+          ++skip_count;
+          if (skip_count == skip_delay) {
+            forwards = false;
+            skip_count = 0;
+          }
+        }
+      }
+      else {
+         if(offset == 0){
+            forwards = true;
+            i++;
+            offset = 0;
+            if(i >= len){
+              i=0;
+            } 
+         }
+      }
+      part = words[i].substr(0, offset);
+      if (skip_count == 0) {
+        if (forwards) {
+          offset++;
+        }
+        else {
+          offset--;
+        }
+      }
+    	$('#steps').text(part);
+  },speed);
+};
+
+$(document).ready(function(){
+  wordflick();
+});
+    
+    </script>
+</body>
+</html>
