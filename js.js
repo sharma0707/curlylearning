@@ -1,4 +1,3 @@
-
 var
   words = ['Developer.','Programmer..','Fluencer...', 'or', 'Anything'],
   part,
@@ -8,7 +7,7 @@ var
   forwards = true,
   skip_count = 0,
   skip_delay = 5,
-  speed = 100;
+  speed = 120;
 
 var wordflick = function(){
   setInterval(function(){
