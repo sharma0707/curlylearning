@@ -1,0 +1,17 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #006088;
+}
+.form-label{
+    display: block;
+    font-size: .875rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.form-email-text-input{
+    margin-bottom: 30px;
+}
+.form-text-input{
+    margin-bottom: 30px;
+}

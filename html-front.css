@@ -1,7 +1,7 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color:#fff;
+    background-color:rgba(255, 255, 255, 0.096)
 }
 main{
     background-image: url("Images/artwork-native.webp");
@@ -11,10 +11,30 @@ main{
     margin-left: 90vh;
     border-radius: 20px;
 }
+
 .def{
     font-style: oblique;
     margin: 6px;
 }
 .motion{
-    margin: 20px;
+    position: absolute;
+    top: 50%;
+    right: 70%;
+    transform: translate(10%, -40%);
+    
+}
+.motion h2{
+    color: lightslategray;
+    font-style: italic;
+    
+
+}
+.dev-name{
+    font-variant:small-caps
+}
+.motion p span {
+    color: rgb(57, 235, 57);
+    font-style: oblique;
+    font-weight: 700;
+    font-size: larger;
 }

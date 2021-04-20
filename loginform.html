@@ -1,21 +1,38 @@
-<html>
-    <body>
-        <style>
-            input{
-                border-radius: 20px;
-                outline: none;
-                border-color: #313131;
-            }
-            .form{
-                align-items: center;
-            }
-        </style>
-        <form action="servlet" method="GET">
-            Name: <input type="text" name="username"><br><br>
-            password: <input type="password" name="userpass"><br><br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="E:\website\loginform.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="form">
+        <form action="" method="post">
+            <div>
+                <label for="email" class="form-label" >Your email address</label>
+                <input type="email" class="form-email-text-input" autocapitalize="off" autocorrect = "off" id="email">
+                <label for="username" class="form-label">Choose a username</label>
+                <input type="text" class="form-text-input" autocorrect = "off" id="username" value="">
+                <label for="password" class="form-label">Choose a password</label>
+                <div class="form-password-input">
+                    <input type="password" autocomplete="off" id="password">
+                    <span class="form-password-input_toggle">
+                        <svg xmlns = "" viewBox = "0 0 24 24" height = "20" width = "20">
+                            <use xlink:href ="">
+                                #shadow-root(closed)
+                            </use>
+                        </svg>
+                    </span>
+
+                </div>
+
+            </div>
             
-            <input type="submit" value="login">
-                </form>
-        
-    </body>
+        </form>    
+    </div>
+
+</body>
 </html>

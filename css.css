@@ -252,7 +252,11 @@ nav #darkmode{
 .h-box{
     align-items: center;
     margin-top: 20px;
+    margin-left: 20%;
+    font-variant: small-caps;
+    text-decoration-line: underline;
     color: var(--secondory-color);
+    font-size: 1.3rem;
     position: relative;
 
 }
@@ -370,11 +374,56 @@ button:active{
 }
 
 /************************CIRCULAR THEME CODE HERE********************/
+.team-h{
+    align-items: center;
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 30%;
+    font-size: 1.3rem;
+    font-variant: small-caps;
+    color: var(--secondory-color);
+    text-decoration-line: underline;
+}
+.team{
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    background-color: #fff;
+}
+.our-team{
+    
+    width: 150px;
+    height: 200px;
+    background-color: #fff;
+    box-shadow:  12px 12px 12px 12px rgba(0, 0, 0, 0.1);
+    margin: 30px;
+    border-radius: 10px;
+    display: flex;
+    background-image: url("Images/me1.jpg");
+}
+.our-team:hover{
+    width: 150px;
+    height: 200px;
+   
+}
+.first-person p{
+    color: salmon;
+    cursor: pointer;
+    font-weight: 600;
+    font-variant: small-caps;
+    font-style: oblique;
+    margin-top: 490%;
+    margin-left: 150%;
+}
 
 
 /************************Footer code Here***********************/
 #footer{
-    background-color:#333;
+    background-color:rgb(93, 102, 110);
     padding: 12px;
     
 }
