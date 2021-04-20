@@ -4,7 +4,7 @@ body{
     background-color:rgba(255, 255, 255, 0.096)
 }
 main{
-    background-image: url("Images/artwork-native.jpeg");
+    background-image: url("Images/artwork-native.webp");
     height: 67vh;
     width: 100vh;
     margin: 2px;
