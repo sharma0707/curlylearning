@@ -135,9 +135,7 @@
                             <p>wiki</p>
                         </div>                    
                     </div>
-
-                            
-
+                    
                 </div>
                     
         <!---------------------------------TEAM END HERE------------------------------------->
@@ -166,13 +164,26 @@
                         </div>
                     </div>
                 
-                    <input type="text" placeholder="Write what you think.."> <i title="Feedback" class="fa fa-comments" aria-hidden="true"></i>
+                    <input type="text" placeholder="Write what you think.."><i title="Feedback" class="fa fa-comments" aria-hidden="true"></i>
+                   
+                    
+                    </div>
+                </div>
             </div>
-            </div>
+            <button id="myBtn">feedback</button>
+
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+                    
+                      <!-- Modal content -->
+                      <div class="modal-content">
+                        <span class="close"> &CircleTimes;</span>
+                        <p>We'll work on your feedback and Thanks for your feedback</p>
+                      </div>
         </section>     
+         
     </footer>
-
-
+   
     <script type="text/javascript">
         $(".txt input").on("focus", function(){
             $(this).addClass("focus")
@@ -183,15 +194,7 @@
         });
  
         /********************FOR TOPNAV**********************/
-        function myFunction(){
-            var x = document.getElementById("topnav");
-         if(x.className === "topnav"){
-             x.className += "response";
-         }
-         else{
-             x.className = "response";
-         }
-        }
+        
         $("#login").click(function(){
             alert("sure");
             window.location = "http://www.google.com";
@@ -210,15 +213,7 @@
         });
  
         /********************FOR TOPNAV**********************/
-        function myFunction(){
-            var x = document.getElementById("topnav");
-         if(x.className === "topnav"){
-             x.className += "response";
-         }
-         else{
-             x.className = "response";
-         }
-        }
+        
         $("#login").click(function(){
             alert("sure");
             window.location = "http://www.google.com";
@@ -241,6 +236,10 @@
             }
         }
     </script>
-
+    
+    <script src="js1.js">
+              </script>
+        
+        
     </body>
 </html>
