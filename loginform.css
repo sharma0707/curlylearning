@@ -3,15 +3,47 @@ body{
     padding: 0px;
     background-color: #006088;
 }
-.form-label{
+label.form-label{
     display: block;
     font-size: .875rem;
     font-weight: 600;
     margin-bottom: 5px;
 }
-.form-email-text-input{
-    margin-bottom: 30px;
+.form-email-text-input, .form-text-input{
+    margin-bottom: 22px;
 }
-.form-text-input{
-    margin-bottom: 30px;
+.form-card{
+    background-color: white;
+    padding: 46px;
+    margin: 90px auto;
+    max-height: 200px;
+    max-width: 200px;
+    border-radius: 30px solid;
+}
+input.form-email-text-input, .form-text-input{
+    background-color: #e3e9e9;
+    color: #a7aaaa;
+    outline: none;
+    border-style: none;
+}
+.button{
+    margin-top: 20px;
+    width: 100%;
+    color: white;
+    background-color: #c9356e;
+    border-color: #c9356e;
+    box-shadow: 0 1px 1px 0;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 20px;
+    border-radius: 2px solid;
+}
+.other-links{
+
+    margin-left: 40%;
+    align-items: center;
+    color: #fff;
 }
